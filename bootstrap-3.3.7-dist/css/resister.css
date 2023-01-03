@@ -1,0 +1,39 @@
+.section-resister {
+    min-height: 1000px;
+    background: white;
+}
+
+.form-background {
+    background: #9ccce9;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.form-background>h3 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form-item {
+    margin-bottom: 15px;
+}
+
+.btn-login {
+    padding-top: 12px;
+    padding-right: 38px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #f0bcd4;
+    color: white;
+    border: none;
+    outline: none;
+    display: table;
+    cursor: pointer;
+    margin: 15px auto 31px;
+}
+
+.avatar-upload {
+    margin-top: 10px;
+}

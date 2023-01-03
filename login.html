@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Form Login </title>
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+<body>
+    <div class="container">
+        <div class="blueBg" >
+            <div class="box signin">
+                <h2> Đã có tài khoản? </h2>
+                <button class="signinBtn">Đăng nhập</button>
+            </div>
+            <div class="box sighup">
+                <h2> Chưa có tài khoản?</h2>
+                <button class="signupBtn">Đăng ký</button>
+            </div>
+        </div>
+        <div class="formBx">
+            <div class="form signinForm">
+                <form action="index.html">
+                <h3>Đăng Nhập</h3>
+                <form >
+                    <label for="usrname">Tài khoản</label>
+                    <input type="text" id="usrname" name="usrname" required>                
+                    <label for="pswd1">Mật khẩu</label>
+                    <input type="password" id="pswd1" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Mật khẩu phải từ 6 kí tự trở lên và có ít nhất 1 kí tự viết thường và 1 kí tự in hoa" required>
+                <input  type="submit" value="Đăng nhập" >
+                <a href="" class="forgot">Quên mật khẩu</a> </br>
+                </form>
+            </div>
+
+            <div class="form signupForm">
+                <form>
+                <h3>Đăng ký</h3>
+                <form action="dangkythanhcong.html">
+                    <label for="usrname">Tài khoản</label>
+                    <input type="text" id="usrname" name="usrname" required>
+                    <label for="pswd1">Mật khẩu</label>
+                    <input type="password" id="pswd1" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Mật khẩu phải từ 6 kí tự trở lên và có ít nhất 1 kí tự viết thường và 1 kí tự in hoa" required>
+                    <label for="pswd2">Nhập lại mật khẩu</label>
+                    <input type="password" id="pswd2" name="pswd2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"  title="Mật khẩu không khớp với mật khẩu đã nhập" required>
+                    <form action="dangkythanhcong.html">
+                        Email <input type="email" id="myEmail" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                        <input type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

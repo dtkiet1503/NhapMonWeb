@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap 3.3-->
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!--CDN Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Jquery -->
+    <script src="bootstrap-5.1.3-dist/js/jquery-3.6.0.min.js"></script>
+    <!-- popper -->
+    <script src="bootstrap-5.1.3-dist/js/popper.min.js"></script>
+    <!-- nhungs file CSS -->
+    <!-- <link href="css/trangchu.css" rel="stylesheet" /> -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <title>Mobile Fun</title>
+    <link rel="shortcut icon" type="image/png" href="images/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/script.js"></script>
+    <script src="js/showcart.js"></script>
+    <script src="js/labels.js"></script>
+    <script src="js/sw_lang.js"></script>
+</head>
+
+<body>
+    <header  class="header">
+
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+    
+        <nav  class="navbar">
+            <a href="index.html" class="multilang" id="MENU_HOME">Trang Chủ</a>
+            <a href="#about"class="multilang" id="MENU_INTRODUCE">Giới Thiệu</a>
+            <a href="sanpham.html" class="multilang" id="MENU_PRODUCT">Sản Phẩm</a>
+            <a href="#blogs" class="multilang" id="MENU_BLOGS">Tin Công Nghệ</a>
+            <a href="lienhe.html" class="multilang" id="MENU_CONTACT">Liên Hệ</a>
+            <a href="login.html" class="multilang" id="MENU_LOGIN">Đăng Nhập</a>
+        </nav>
+    
+        <div class="icons">
+            <div class="input-container">					
+                <i onclick="openCart()"class="fa fa-shopping-cart icon-pink"></i>
+            </div>
+        </div>
+    
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+        <span id="language">
+            <a href="javascript:void(0)" onclick="changeLang('en-US')"><img src="images/us.png" alt="US"></a>
+            <a href="javascript:void(0)" onclick="changeLang('vi-VN')"><img src="images/vn.png" alt="VN"></a>
+        </span>
+       
+    </header>
+
+
+<section style="width: 100%;" class="contact" id="contact">
+
+
+    <div class="row">
+        <form action="">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3 class="multilang" id="HEAD_23" style="color: antiquewhite;"> Liên Hệ Với Chúng Tôi</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input class="multilang" id="HEAD_24" type="text" placeholder="Tên">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <span  class="fas fa-phone"></span>
+                <input class="multilang" id="HEAD_25" type="number" placeholder="Số Điện Thoại">
+            </div>
+            <input class="multilang" id="HEAD_26" style="color: aliceblue;" type="submit" value="GỬI NGAY BÂY GIỜ" class="btn">
+        </form>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<footer>
+    <div class="container">
+        <!--Bắt Đầu Nội Dung Giới Thiệu-->
+        <div class="noi-dung about">
+            <h2 class="multilang" id="HEAD_13">Về Chúng Tôi</h2>
+            <p class="multilang" id="HEAD_14"> Được thành lập vào ngày 18/5/2022 để phục vụ đồ án cho môn Nhập môn lập trình web của cô Nguyễn Thị Thùy Linh, thuộc nhóm ct188 lớp học phần 8. Các thành viên trong nhóm gồm có Đặng Tuấn Kiệt, Nguyễn Hoài Nhân Võ Thanh Lý cùng nhau hợp tác
+                xây dựng.
+            </p>
+            <ul class="social-icon">
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <!--Kết Thúc Nội Dung Giới Thiệu-->
+        <!--Bắt Đầu Nội Dung Đường Dẫn-->
+        <div class="noi-dung links">
+            <h2  class="multilang" id="HEAD_15">Đường Dẫn</h2>
+            <ul>
+                <li><a href="#" class="multilang" id="HEAD_15">Trang Chủ</a></li>
+                <li><a href="#about" class="multilang" id="HEAD_16">Về Chúng Tôi</a></li>
+                <li><a href="#footer" class="multilang" id="HEAD_17">Thông Tin Liên Lạc</a></li>
+                <li><a href="#" class="multilang" id="HEAD_18">Dịch Vụ</a></li>
+                <li><a href="#" class="multilang" id="HEAD_19">Điều Kiện Chính Sách</a></li>
+            </ul>
+        </div>
+        <!--Kết Thúc Nội Dung Đường Dẫn-->
+        <!--Bắt Đâu Nội Dung Liên Hệ-->
+        <div class="noi-dung contact">
+            <h2 class="multilang" id="HEAD_17">Thông Tin Liên Hệ</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-map-marker"></i></span>
+                    <span class="multilang" id="HEAD_20">Đường 3/2<br />
+                        Phường Xuân Khánh, Quận Ninh Kiều, Thành Phố Cần Thơ<br />
+                        Việt Nam</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-phone"></i></span>
+                    <p><a href="#">+84 123 456 789</a>
+                        <br />
+                        <a href="#">+84 987 654 321</a></p>
+                </li>
+                <li>
+                    <span><i class="fa fa-envelope"></i></span>
+                    <p><a href="#"><span class="__cf_email__" data-cfemail="43272a22202b2a262e222a2f03242e222a2f6d202c2e">[Email&#160;]</span></a></p>
+                </li>
+                <li>
+                    <form class="form">
+                        <input type="email" class="form__field" placeholder="Email" />
+                        <button type="button" class="btn btn--primary uppercase">Send</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <!--Kết Thúc Nội Dung Liên Hệ-->
+    </div>
+</footer>
+</html>
